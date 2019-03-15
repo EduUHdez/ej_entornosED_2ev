@@ -46,7 +46,10 @@ public class MinimoComunMultiplo {
  * @brief recorre el array entero y si alguno de sus numeros es 0 devuelve true, sino false.
  * @return si alguno de los numeros es 0, devuelve true. Sino devuelve false.
  */
-  private boolean algunoEsCero(int[] ints) {
+
+
+  public static boolean algunoEsCero(int[] ints) {
+
     for (int d : ints) {
       if (d == 0) {
         return true;
@@ -71,12 +74,16 @@ public class MinimoComunMultiplo {
     return abs;
   }
   
+
 /**
  * 
  * @param ints es un array de enteros.
  * @return mediante el metodo max, devuelve el numero mayor del array que le hemos pasado como parametro.
  */
-  private int max(int[] ints) {
+
+
+  public static int max(int[] ints) {
+
     int max = ints[0];
 
     for (int i = 1; i < ints.length; i += 1) {
@@ -86,13 +93,16 @@ public class MinimoComunMultiplo {
     return max;
   }
   
+
 /**
  * 
  * @param d es un entero
  * @param ints es un array de enteros
  * @return si el numero d no es minimo comun multiplo del array ints devuelve false(resto distinto de 0). En caso contrario devuelve true.
  */
-  private boolean esMinimoComunMultiplo(int d, int[] ints) {
+
+
+  public boolean esMinimoComunMultiplo(int d, int[] ints) {
     for (int i = 0; i < ints.length; i += 1) {
       if (d % ints[i] != 0) {
         return false;

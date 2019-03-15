@@ -2,6 +2,10 @@
 # Created by https://www.gitignore.io/api/eclipse,windows
 # Edit at https://www.gitignore.io/?templates=eclipse,windows
 
+### Archivos class ###
+*.class
+
+
 ### Eclipse ###
 
 .metadata
