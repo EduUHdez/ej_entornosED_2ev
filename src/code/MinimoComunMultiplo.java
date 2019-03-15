@@ -31,7 +31,7 @@ public class MinimoComunMultiplo {
     }
   }
 
-  private boolean algunoEsCero(int[] ints) {
+  public static boolean algunoEsCero(int[] ints) {
     for (int d : ints) {
       if (d == 0) {
         return true;
@@ -52,7 +52,7 @@ public class MinimoComunMultiplo {
   }
   
 
-  private int max(int[] ints) {
+  public static int max(int[] ints) {
     int max = ints[0];
 
     for (int i = 1; i < ints.length; i += 1) {
@@ -63,7 +63,7 @@ public class MinimoComunMultiplo {
   }
   
 
-  private boolean esMinimoComunMultiplo(int d, int[] ints) {
+  public boolean esMinimoComunMultiplo(int d, int[] ints) {
     for (int i = 0; i < ints.length; i += 1) {
       if (d % ints[i] != 0) {
         return false;
